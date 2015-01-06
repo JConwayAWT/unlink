@@ -1,0 +1,1 @@
+$('p').has('a').toArray().forEach(function(element, array, index){ $(element).html($(element).text()); } );

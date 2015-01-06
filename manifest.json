@@ -1,0 +1,35 @@
+{
+   "name": "Remove Distracting Links",
+   "description": "Removes (most) of the links you don't want to be bothered with while reading an article -- scientifically proven to increase reading comprehension.",
+   "version": "1.0",
+   "permissions": [
+     "activeTab"
+   ],
+   "background": {
+     "scripts": ["linkremoval.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_title": "Remove links from current content."
+    },
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": {
+           "19": "icon.png",
+           "38": "icon_38.png"
+        }
+      },
+    "icons": {
+      "48": "icon_38.png"
+    },
+    "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K",
+        "chromeos": "Ctrl+Shift+K",
+        "linux": "Ctrl+Shift+K"
+      }
+    }
+  }
+}
